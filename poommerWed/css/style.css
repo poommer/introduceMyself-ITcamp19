@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Prompt:400|Inter:400,500");
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', Times, serif;
+    color: #fff;
+}
+body::-webkit-scrollbar {
+    width: 15px;
+   }
+body::-webkit-scrollbar-track {
+    background-color: #00a2ff17;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(4, 81, 196); 
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+ main{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+ }
+
+ section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1580px;
+    padding: 10px;
+ }
+
+footer{
+    display: flex;
+    justify-content: center;
+    min-width: 85%;
+    height: 110px;
+}
+
+.header-container{
+    width: 1580px;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: #060E21;
+    border-width: 0px 3px 1px 3px;
+    border-style: solid;
+    border-color: #1AA1BE;
+    box-shadow: 2px 8px 98px 6px rgba(0, 15, 255, 0.58);
+    border-radius: 0px 0px 55px 20px
+}
+.img-astronaut{
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    left: 1590px;
+    top: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(3, 3, 3, 0.6));
+}
+
+.logoAndnameWeb{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.NameWeb{
+ 
+}
+nav{
+    margin-left: 285px;
+    /* background-color: #17cc17; */
+}
+
+.ul-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.list-nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.list-nav img{
+    width: 45px;
+    background-color: #1AA1BE;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.list-nav h4{
+    margin-left: 5px;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.container-intro{
+    width: 1580px;
+    height: 450px;
+    border: 5px solid #0094FF;
+    box-shadow: 0px 0px 30px 11px rgba(0, 148, 255, 0.85);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.content-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
