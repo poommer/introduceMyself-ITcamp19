@@ -29,6 +29,7 @@ header{
     height: 110px;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
  main{
@@ -55,7 +56,35 @@ footer{
 }
 
 p{
-    font-size: 20px;
+    font-size: 125%;
+}
+
+h1{
+    font-size: 155%;
+}
+
+h2{
+    font-size: 150%;
+}
+
+h3{
+    font-size: 145%;
+}
+
+h4{
+    font-size: 140%;
+}
+
+h5{
+    font-size: 135%;
+}
+
+h6{
+    font-size: 130%;
+}
+
+b{
+    color: #FF003D;
 }
 
 .header-container{
@@ -88,9 +117,6 @@ p{
      align-items: center;
 }
 
-.NameWeb{
- 
-}
 nav{
     margin-left: 285px;
     /* background-color: #17cc17; */
@@ -120,9 +146,8 @@ a{
 
 }
 
-.list-nav img{
+.img-nav{
     width: 45px;
-    background-color: #1AA1BE;
     border-radius: 100%;
     padding: 5px;
 }
@@ -131,7 +156,14 @@ a{
     margin-left: 5px;
 }
 
+.group-text{
+    display: flex;
+    flex-direction: column;
+
+}
+
 /* --------------------------------------------------------------------------------------------------- */
+
 
 .container-intro{
     width: 1580px;
@@ -140,6 +172,7 @@ a{
     box-shadow: 0px 0px 10px 5px rgba(0, 148, 255, 0.85);
     border-radius: 10px;
     padding: 10px;
+    animation:intro 3s 0.5s alternate infinite;
 }
 
 .content-intro{
@@ -151,14 +184,65 @@ a{
 }
 
 .content-intro p{
-    display: flex;
-    align-items: center;
     text-align: justify;
-    
 }
 .intro{
     width: 100%;
     height: 100%;
     position:sticky;
     top: 1;
+}
+
+.img-intro{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    
+}
+
+.asteroid{
+    left: 1640px;
+    top: 150px;
+}
+
+.orbit{
+    left: 65px;
+    top: 810px;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-profile{
+    display: flex;
+    flex-direction: column;
+    width: 2500px;
+    min-height: 450px;
+    border: 5px solid #0094FF;
+    box-shadow: 0px 0px 10px 5px rgba(0, 148, 255, 0.85);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.head-content-profile{
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------- */
+@keyframes intro {
+from {
+    border: 5px solid #48ff00;
+    box-shadow: 0px 0px 10px 5px rgba(0, 255, 85, 0.85);
+}
+to {
+    border: 5px solid rgb(255, 34, 34);
+    box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.85);
+}
 }
