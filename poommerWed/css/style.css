@@ -211,28 +211,66 @@ a{
 }
 
 /* --------------------------------------------------------------------------------------------------- */
+#section1{
+    background-size: cover;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background:url('https://pwat.co.th/pw2016-files/2022/01/space-travel-02.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 10rem; 
+    padding: 10rem;
+    
+}
+
 .profile{
+    width: 1580px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.content-profile{
+.content{
+    width: 1500px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
-    width: 2500px;
-    min-height: 450px;
+    background-color: rgba(255, 255, 255, 0.178);
     border: 5px solid #0094FF;
     box-shadow: 0px 0px 10px 5px rgba(0, 148, 255, 0.85);
     border-radius: 10px;
     padding: 10px;
+    position: relative;
+    z-index: 997;
+    overflow: hidden;
 }
 
-.head-content-profile{
+.head-content{
     display: flex;
     align-items: center;
-
 }
 
+.main-content{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact{
+    width: 1580px;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 998;
+    margin-top: 5rem;
+}
+
+.group-text-contact{
+    display: flex;
+    align-items: center;
+}
 
 
 /* --------------------------------------------------------------------------------------------------- */
@@ -246,3 +284,4 @@ to {
     box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.85);
 }
 }
+
