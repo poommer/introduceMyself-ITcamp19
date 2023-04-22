@@ -1,191 +1,242 @@
 <!DOCTYPE html>
-<html lang="en" style=" background-color:#060E21;">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>poommer | introduceMyself-IT Camp19</title>
+    <link rel="shortcut icon" href="img/uranus.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>poommer | introduceMyself-IT Camp19</title>
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <a href="index.html">
-                <div class="logoAndnameWeb">
-                    <img src="img/uranus.png" alt="" style="width: 85px; height: 85px;">
-                    <div class="group-text">
-                        <img src="img/logo.png" alt="" style="width: 189px; height: 37px;">
-                        <h4 class="PrologueWeb">welcome to poommerWeb :)</h4>
-                    </div>
+            <a href="#" style="display: flex; justify-content: center; align-items: center; ">
+                <img src="img/uranus.png" alt="" style="width: 60px; height: 60px;">
+                <div class="text-group">
+                    <img src="img/logo.png" alt="" style="width: 146px; height: 29px; ">
+                    <p>welcome to poommerWeb :)</p>
                 </div>
             </a>
+            <button id="btn-hamburger" onclick="openNav()">
+                <img src="img/hamburger (1).png" alt="" style="width: 100%; height: 100%;">
+            </button>
 
-            <nav>
-                <ul class="ul-nav">
-                    <a href="#section1">
-                        <li class="list-nav">
-                            <img src="img/capricorn (2).png" alt="" class="img-nav"
-                                style="background: linear-gradient(150.64deg, #E3FEE2 14.19%, rgba(12, 87, 0, 0.69) 86.94%);">
-                            <h5>ประวัติส่วนตัว</h5>
-                        </li>
-                    </a>
-                    <a href="#section2">
-                        <li class="list-nav">
-                            <img src="img/telescope.png" alt="" class="img-nav"
-                                style="background: linear-gradient(150.64deg, #BCE2FF 14.19%, #00599C 86.94%);">
-                            <h5>ผลงาน</h5>
-                        </li>
-                    </a>
-                    <a href="#section3">
-                        <li class="list-nav">
-                            <img src="img/planet.png" alt="" class="img-nav"
-                                style="background: linear-gradient(150.64deg, #FFEBB9 14.19%, #F4BF00 86.94%);">
-                            <h5>กิจกรรมที่เข้าร่วม</h5>
-                        </li>
-                    </a>
-
-                </ul>
-            </nav>
         </div>
-        <img src="img/astronaut.png" alt="" class="img-astronaut">
     </header>
 
+    <div class="nav-area">
 
+        <nav onblur="CloseNav()">
+            <ul class="ul-nav">
+                <div id="menu-profile" onclick="goto('secProfile')">
+                    <li class="list-nav">
+                        <img src="img/capricorn (2).png" alt="" class="img-nav" style="background:#0c5700;">
+                        <h5>ประวัติส่วนตัว</h5>
+
+                    </li>
+                </div>
+                <div id="menu-work" onclick="goto('secwork')">
+                    <li class="list-nav">
+                        <img src="img/telescope.png" alt="" class="img-nav" style="background: #ee22aa ">
+                        <h5>ผลงาน</h5>
+                    </li>
+                </div>
+                <div id="menu-Activities" onclick="goto('secAct')">
+                    <li class="list-nav">
+                        <img src="img/planet.png" alt="" class="img-nav" style="background: #F4BF00 ;">
+                        <h5>กิจกรรมที่เข้าร่วม</h5>
+                    </li>
+                </div>
+
+            </ul>
+
+            <div class="social">
+                <a href="https://www.facebook.com/siripoom.limsoonthorn" target="_blank" id="fackbook"><img
+                        src="img/facebook.png" alt="" class="social-icon"></a>
+                <a href="https://www.instagram.com/pppoommer/" target="_blank" id="IG"><img src="img/instagram.png"
+                        alt="" class="social-icon"></a>
+                <a href="https://www.linkedin.com/in/siripoom-lim/" id="linkedin" target="_blank"><img
+                        src="img/linkedin.png" alt="" class="social-icon"></a>
+                <a href="https://line.me/ti/p/aSw5ocHPJW" id="line" target="_blank"><img src="img/line.png" alt=""
+                        class="social-icon"></a>
+                <a href="https://github.com/poommer" id="github" target="_blank"><img src="img/github.png" alt=""
+                        class="social-icon"></a>
+            </div>
+        </nav>
+        <button id="btn-close-nav" onclick="CloseNav()"><img src="img/close (2).png" alt=""
+                class="img-btn-close-nav"></button>
+    </div>
 
     <main>
-        <section id="introduction" style="align-items: center;" style="background-color: aliceblue;">
-            <img src="img/asteroid.png" alt="" class="asteroid img-intro">
-            <div class="container-intro">
+        <p></p>
+        <h1 class="topic-text-intro"><span id="topic-text-intro"></span><span id="curor">|</span></h1>
+        <section id="introduction" style=" margin-top: 72px; margin-bottom: 72px;">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="img/asteroid.png" alt="" class="asteroid img-intro">
+                <div class="container-intro">
+                    <div class="content-intro">
+                        <p>
+                            <b>"ความฝัน"</b> คือแรงที่ทำให้ชีวิตของเราขับเคลื่อนไปข้างหน้า
+                            และผมก็เป็นเด็กคนหนึ่งที่มีความฝัน ความฝันของผมน่าจะเริ่มตอนช่วงประถมปลาย
+                            จากการชอบเปิดโปรแกรมต่าง ๆ ในคอมพิวเตอร์ หรือเลือกดูแท็บต่าง ๆ ของเว็บไซต์ แล้วก็เอ๊ะ!
+                            โปรแกรมนี้มีกลไกการทำงานยังไงนะ ทำไมคลิ๊กปุ่มนี้แล้วไปอีกหน้าได้
+                            หรือทำไมกดแท็บนี้บนเว็บไซต์แล้วช่อง URL มันเปลี่ยนแปลงนะ <br><br>
 
-                <div class="content-intro">
-                    <p>
-                        <b>"ความฝัน"</b> คือแรงที่ทำให้ชีวิตของเราขับเคลื่อนไปข้างหน้า
-                        และผมก็เป็นเด็กคนหนึ่งที่มีความฝัน ความฝันของผมน่าจะเริ่มตอนช่วงประถมปลาย
-                        จากการชอบเปิดโปรแกรมต่าง ๆ ในคอมพิวเตอร์ หรือเลือกดูแท็บต่าง ๆ ของเว็บไซต์ แล้วก็เอ๊ะ!
-                        โปรแกรมนี้มีกลไกการทำงานยังไงนะ ทำไมคลิ๊กปุ่มนี้แล้วไปอีกหน้าได้
-                        หรือทำไมกดแท็บนี้บนเว็บไซต์แล้วช่อง URL มันเปลี่ยนแปลงนะ <br><br>
+                            จนช่วงป.6 ผมได้รู้จักกับอาชีพ <b>"โปรแกรมเมอร์"</b> ได้ลองศึกษาคร่าว ๆ จึงได้รู้ว่านี้แหละ
+                            สิ่งที่ใกล้เคียงหรือตรงกับที่เราสงสัยเลย คือคนที่กำหนดให้เว็บไซต์หรือโปรแกรมทำตามที่กำหนดไว้
+                            หลังจากนั้นผมจึงเริ่มค้นหาคลิปวิดีโอสอนเขียนโปรแกรมต่าง ๆ
+                            แต่ด้วยตอนนั้นผมแทบไม่รู้เลยว่ามันมีภาษาอะไรบ้าง หรือต้องเริ่มจากตรงไหนเลย
+                            เลยยังไม่ค่อยได้อะไรมาก <br><br>
 
-                        จนช่วงป.6 ผมได้รู้จักกับอาชีพ <b>"โปรแกรมเมอร์"</b> ได้ลองศึกษาคร่าว ๆ จึงได้รู้ว่านี้แหละ
-                        สิ่งที่ใกล้เคียงหรือตรงกับที่เราสงสัยเลย คือคนที่กำหนดให้เว็บไซต์หรือโปรแกรมทำตามที่กำหนดไว้
-                        หลังจากนั้นผมจึงเริ่มค้นหาคลิปวิดีโอสอนเขียนโปรแกรมต่าง ๆ
-                        แต่ด้วยตอนนั้นผมแทบไม่รู้เลยว่ามันมีภาษาอะไรบ้าง หรือต้องเริ่มจากตรงไหนเลย
-                        เลยยังไม่ค่อยได้อะไรมาก <br><br>
+                            ผ่านมาช่วงม.2 ผมได้ลองเขียนโปรแกรมภาษาpython ในรายวิชาวิทยาการคำนวณ ผมรู้สึกชอบมาก
+                            มีความสุขที่ได้เรียน ตั้งหน้าตั้งตารอเรียนวิชานี้ แต่ด้วยเวลาที่น้อยผมได้ปฏิบัติแค่ 3
+                            อาทิตย์
+                            ทำให้สิ่งที่ได้มาน้อยนิดมาก ๆ แต่มันก็ทำให้ผมเริ่มจับแนวทางได้
+                            แล้วก็ใช้วิธีเดิมคือค้นหาคลิปวิดีโอที่สอนตามยูทูปแต่เพิ่มเติมคือ รู้คีย์เวิล์ดมากขึ้น
+                            ยิ่งทำให้ผมรู้สึก<b>"ชอบและอยากเดินสู่เส้นทางสายอาชีพนี้มากยิ่งขึ้น"</b><br><br>
 
-                        ผ่านมาช่วงม.2 ผมได้ลองเขียนโปรแกรมภาษาpython ในรายวิชาวิทยาการคำนวณ ผมรู้สึกชอบมาก
-                        มีความสุขที่ได้เรียน ตั้งหน้าตั้งตารอเรียนวิชานี้ แต่ด้วยเวลาที่น้อยผมได้ปฏิบัติแค่ 3 อาทิตย์
-                        ทำให้สิ่งที่ได้มาน้อยนิดมาก ๆ แต่มันก็ทำให้ผมเริ่มจับแนวทางได้
-                        แล้วก็ใช้วิธีเดิมคือค้นหาคลิปวิดีโอที่สอนตามยูทูปแต่เพิ่มเติมคือ รู้คีย์เวิล์ดมากขึ้น
-                        ยิ่งทำให้ผมรู้สึก<b>"ชอบและอยากเดินสู่เส้นทางสายอาชีพนี้มากยิ่งขึ้น"</b><br><br>
+                            หลังจากจบม.3 ผมจึงตัดสินใจสมัครเรียนต่อสายอาชีพ ในสาขาเทคโนโลยีสารสนเทศ
+                            ที่วิทยาลัยอาชีวศึกษาธนบุรี และได้เข้าร่วมโครงการ P-TECH ของ IBM
+                            นี้คือจุดเริ่มต้นที่ทำให้ผมตั้งใจและตั้งมั่นว่า <b>"ผมจะต้องเดินทางในสายอาชีพนี้ให้ได้
+                                นี้แหละคือสิ่งที่ตอบโจทย์เราที่สุดแล้ว"</b> มันทำให้ผมมีเป้าหมาย แสงสว่างเริ่มกลับมา
+                            ผมเริ่มมองเห็นอนาคตตัวเอง ผม <b>"มีความสุขในการเรียน"</b> ที่สุดตลอดระยะเวลาที่เรียนมา
+                            <br><br>
 
-                        หลังจากจบม.3 ผมจึงตัดสินใจสมัครเรียนต่อสายอาชีพ ในสาขาเทคโนโลยีสารสนเทศ
-                        ที่วิทยาลัยอาชีวศึกษาธนบุรี และได้เข้าร่วมโครงการ P-TECH ของ IBM
-                        นี้คือจุดเริ่มต้นที่ทำให้ผมตั้งใจและตั้งมั่นว่า <b>"ผมจะต้องเดินทางในสายอาชีพนี้ให้ได้
-                            นี้แหละคือสิ่งที่ตอบโจทย์เราที่สุดแล้ว"</b> มันทำให้ผมมีเป้าหมาย แสงสว่างเริ่มกลับมา
-                        ผมเริ่มมองเห็นอนาคตตัวเอง ผม <b>"มีความสุขในการเรียน"</b> ที่สุดตลอดระยะเวลาที่เรียนมา
-                        <br><br>
+                            ด้วยความรู้ที่มากขึ้นทำให้ผมรับรู้ว่า สายงานนี้มีการแบ่งแยกย่อยไปอีก
+                            และสายงานที่ผมอยากลองและสนใจคือ <b>"Application Developer"</b> ทำให้ผมเลือกที่จะสมัครค่ายนี้
+                            เพื่อค้นหาและได้ลงมือทำ ว่ามันจะตอบโจทย์รึเปล่า <b>สุดท้ายอยากฝากตัวกับพี่ ๆ
+                                รับผมไว้พิจารณาด้วยนะคั้บ ผมอยากเข้าร่วมและอยากเจอพี่ ๆ มากครับ</b><br><br>
 
-                        ด้วยความรู้ที่มากขึ้นทำให้ผมรับรู้ว่า สายงานนี้มีการแบ่งแยกย่อยไปอีก
-                        และสายงานที่ผมอยากลองและสนใจคือ <b>"Application Developer"</b> ทำให้ผมเลือกที่จะสมัครค่ายนี้
-                        เพื่อค้นหาและได้ลงมือทำ ว่ามันจะตอบโจทย์รึเปล่า <b>สุดท้ายอยากฝากตัวกับพี่ ๆ
-                            รับผมไว้พิจารณาด้วยนะคั้บ ผมอยากเข้าร่วมและอยากเจอพี่ ๆ มากครับ</b><br><br>
-
-                        <span style="color: #00e626; text-align: center;">***สำหรับเว็บนี้จะประกอบไปด้วย 3 หัวข้อคือ
-                            @ประวัติส่วนตัว @ผลงาน @กิจกรรมที่เข้าร่วม พี่ ๆ
-                            สามารถคลิ๊กตามเมนูตรงheaderได้เลยครับ***</span>
-                    </p><br>
-                </div>
-
-            </div>
-            <img src="img/orbit.png" alt="" class="orbit img-intro">
-        </section>
-
-
-        
-        <section id="section1">
-            <div
-                style="background-color:#000000; width: 100%; height: 100%; position: absolute;opacity: 60%; z-index: 0;">
-
-            </div>
-            <div class="profile">
-                <div
-                    style="display: flex; justify-content: center; align-items: center; width: 100%; margin-right: 30px;">
-                    <img src="img/poom.png" alt="" style="width: 260px; transform: rotate(-24.27deg);">
-                </div>
-
-                <div class="content">
-                    <div class="head-content">
-                        <img src="img/capricorn (2).png" alt="" class="img-nav"
-                            style="background: linear-gradient(150.64deg, #E3FEE2 14.19%, rgba(12, 87, 0, 0.69) 86.94%); width: 65px;">
-                        <div class="group-text" style="margin-left: 10px;">
-                            <h1>ประวัติส่วนตัว</h1>
-                            <h3>profile</h3>
-                        </div>
-
+                            <span style="color: #00e626; text-align: center;">***สำหรับเว็บนี้จะประกอบไปด้วย 3 หัวข้อคือ
+                                @ประวัติส่วนตัว @ผลงาน @กิจกรรมที่เข้าร่วม พี่ ๆ
+                                สามารถคลิ๊กตามเมนูตรงheaderได้เลยครับ***</span>
+                        </p><br>
                     </div>
 
-                    <div class="main-content">
-                        <p style="line-height:55px;">
-                            ชื่อ - สกุล <b>นายสิริภูมิ หลิมสุนทร</b> ชื่อเล่น <b>ภูมิ</b> <br>
-                            อายุ <b>16 ปี</b> เกิดวันที่ <b>27 มกราคม 2550</b> <br>
-                            สัญชาติ <b>ไทย</b> เชื้อชาติ <b>ไทย</b> ศาสนา <b>พุทธ</b><br>
-                            คติประจำใจ <b>ถอยห่างจากคนที่ไม่ให้เกียรติแล้วให้ความสำคัญกับคนที่ให้เกียรติเรา</b> <br>
-                            งานอดิเรก <b>ฟังเพลง นอน ศึกษาหาความรู้เกี่ยวกับการเขียนโปรแกรม</b> <br>
-                            บิดา <b>นายนพรัตน์ หลิมสุนทร</b> ประกอบอาชีพ <b>ลูกจ้างชั่วคราว</b> <br>
-                            มารดา <b>นางทัศนีย์ เจริญสุข</b> ประกอบอาชีพ <b>พนักงานราชการ</b> <br>
-                        </p>
-                        
-                        
-                    </div>
                 </div>
-
-                
-                
-            </div>
-
-            <div class="contact">
-               
-
-                <div class="content">
-                    <div class="head-content">
-                        <img src="img/communicate.png" alt="" class="img-nav"
-                            style="background: #f7ff87; width: 65px;">
-                        <div class="group-text" style="margin-left: 10px;">
-                            <h1>ติดต่อ</h1>
-                            <h3>contact</h3>
-                        </div>
-
-                    </div>
-
-                    <div class="main-content">
-                        <div class="group-text-contact">
-                            <img src="img/placeholder.png" alt="" width="50px">
-                            <p>
-                                101/36 ซอยวัดเลียบราษฎร์บำรุง ถนนกรุงเทพ-นนทบุรี แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพมหานคร 10800
-                            </p>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-
-                 <div
-                    style="display: flex; justify-content: center; align-items: center; width: 100%; margin-right: 30px;">
-                    <img src="img/launch.png" alt="" style="width: 260px; transform: rotate(-24.27deg);">
-                </div>
-                
+                <img src="img/orbit.png" alt="" class="orbit img-intro">
             </div>
 
         </section>
-        <section id="section2" style="padding-top: 10rem;">
 
+        <section id="secProfile">
+            <div class="head-sec" style="background-color: #46be00;">
+                 <img src="img/capricorn (2).png" alt="" class="img-nav" style="background:#0c5700; width: 80px; height: 80px;"> 
+            <div class="text-group">
+                <h1>ประวัติส่วนตัว</h1>
+                <h3>profile</h3>
+            </div>
+            </div>
+
+            <div class="mainPro" >
+                <div class="rowPo" >
+                    <div class="BasicInfo container"><h1>ข้อมูลพื้นฐาน</h1>
+                        <div class="row">
+                            <div class="info-group" style="width: 390px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>นายสิริภูมิ หลิมสุนทร (ภูมิ)</p>
+                            </div>
+
+                            <div class="info-group" style="width: 390px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>27 มกราคม 2550 (16ปี)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="info-group" style="width: 258px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>ไทย</p>
+                            </div>
+
+                            <div class="info-group" style="width: 258px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>ไทย</p>
+                            </div>
+
+                            <div class="info-group" style="width: 258px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>พุทธ</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="info-group" style="width: 780px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>นายสิริภูมิ หลิมสุนทร (ภูมิ)</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="info-group" style="width: 780px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>นายสิริภูมิ หลิมสุนทร (ภูมิ)</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="info-group" style="width: 390px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>นายสิริภูมิ หลิมสุนทร (ภูมิ)</p>
+                            </div>
+
+                            <div class="info-group" style="width: 390px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>27 มกราคม 2550 (16ปี)</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="info-group" style="width: 390px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>นายสิริภูมิ หลิมสุนทร (ภูมิ)</p>
+                            </div>
+
+                            <div class="info-group" style="width: 390px;">
+                                <img src="img/motivation.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                <p>27 มกราคม 2550 (16ปี)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div style="width: 10px;"></div> -->
+                    <div class="contact container "><h1>co</h1></div>
+                </div>
+
+                <div class="rowPo" >
+                    <div class="edu container"><h1>ed</h1></div>
+                    <!-- <div style="width: 10px;"></div> -->
+                    <div class="skill container"><h1>sk</h1></div>
+                </div>
+            </div>
+           
+            
         </section>
 
-        <section id="section3" style="padding-top: 10rem;">
-            <h1>Test section3</h1>
+        <section id="secwork">
+            <div class="head-sec" style="background-color: #ee22aa;">
+                <img src="img/telescope.png" alt="" class="img-nav" style="background:#921a60; width: 80px; height: 80px;"> 
+           <div class="text-group">
+               <h1>ผลงาน</h1>
+               <h3>work</h3>
+           </div>
+           </div>
+        </section>
+
+        <section id="secAct">
+            <div class="head-sec" style="background-color: #eec922;">
+                <img src="img/planet.png" alt="" class="img-nav" style="background:#99821e; width: 80px; height: 80px;"> 
+           <div class="text-group">
+               <h1>กิจกรรมที่เข้าร่วม</h1>
+               <h3>Activities</h3>
+           </div>
+           </div>
         </section>
     </main>
+
 </body>
 
 </html>

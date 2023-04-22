@@ -1,58 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Prompt:400|Inter:400,500");
 *{
-    border: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Prompt', Times, serif;
+    font-family: 'Prompt', sans-serif;
+    scroll-behavior: smooth;
+    
+} 
+
+body{
+    background-color: #060E21;
     color: #fff;
 }
-body::-webkit-scrollbar {
-    width: 15px;
-   }
-body::-webkit-scrollbar-track {
-    background-color: #00a2ff17;
-}
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(4, 81, 196); 
-    border-radius: 10px;
-}
-body::-webkit-scrollbar-corner {
-    background-color: black;
-}
 
-
-header{
+main{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 110px;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-}
-
- main{
-     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: 12rem;
- }
-
- section{
-    display: flex;
+    /* align-items: center; */
     justify-content: center;
-    flex-direction: column;
-    width: 1580px;
-    padding: 10px;
- }
+    padding: 20px;
+}
 
-footer{
-    display: flex;
-    justify-content: center;
-    min-width: 85%;
-    height: 110px;
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 p{
@@ -60,23 +31,23 @@ p{
 }
 
 h1{
-    font-size: 155%;
+    font-size: 180%;
 }
 
 h2{
-    font-size: 150%;
+    font-size: 170%;
 }
 
 h3{
-    font-size: 145%;
+    font-size: 160%;
 }
 
 h4{
-    font-size: 140%;
+    font-size: 150%;
 }
 
 h5{
-    font-size: 135%;
+    font-size: 140%;
 }
 
 h6{
@@ -86,22 +57,27 @@ h6{
 b{
     color: #FF003D;
 }
+/* =================================================================== */
+header{
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+}
 
 .header-container{
-    width: 1580px;
-    height: 110px;
-    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 75px;
+    background-color: #060E21;
     display: flex;
     align-items: center;
-    padding: 5px;
-    background: #060E21;
-    border-width: 0px 3px 1px 3px;
-    border-style: solid;
-    border-color: #1AA1BE;
-    box-shadow: 2px 8px 50px 6px rgba(0, 15, 255, 0.58);
-    border-radius: 0px 0px 55px 20px;
-    
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 4, 255, 0.651);
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
+
 .img-astronaut{
     position: absolute;
     width: 123px;
@@ -111,39 +87,45 @@ b{
     filter: drop-shadow(0px 4px 4px rgba(3, 3, 3, 0.6));
 }
 
-.logoAndnameWeb{
-     display: flex;
-     justify-content: center;
-     align-items: center;
+.text-group{
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-hamburger{
+    width: 45px;
+    height: 45px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #0038bb;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+#btn-hamburger:hover{
+    width: 50px;
+    height: 50px;
+    background-color: #1144bb;
+    transition: 1s ease;
+    animation:spin 1s alternate;
+}
+
+.nav-area{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    background-color: #ffffff48;
+    display: none;
+    flex-direction: row-reverse;
 }
 
 nav{
-    margin-left: 285px;
-    /* background-color: #17cc17; */
-}
-
-.ul-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px;
-    
-}
-
-a{
-    text-decoration: none;
-    
-}
-
-.list-nav {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
+    width: 20em;
+    background-color: #18006d;
     padding: 10px;
-    cursor: pointer;
-
 }
 
 .img-nav{
@@ -152,18 +134,86 @@ a{
     padding: 5px;
 }
 
-.list-nav h4{
+ul{
+    height: 40em;
+    background-color: #fff;
+    padding: 15px;
+    
+}
+
+.list-nav h5{
     margin-left: 5px;
 }
 
-.group-text{
+.list-nav{
+    list-style: none;
+    color: #18006d;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#btn-close-nav{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
 
 }
 
-/* --------------------------------------------------------------------------------------------------- */
+.img-btn-close-nav{
+    height: 100%; 
+    width: 100%; 
+    padding: 10px;
+    
+}
 
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.social a{
+    margin: 5px;
+}
+
+.social-icon{
+    height: 25px; 
+    width: 25px;transition: .2s ease;
+}
+
+.social-icon:hover{
+    height: 60px; 
+    width: 60px;
+    transition: .2s ease;
+    background-color: #a78e00;
+    padding: 6px;
+}
+
+.openNav-active{
+    display: flex;
+}
+
+/* ========================================= */
+.topic-text-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 210%;
+    text-transform: uppercase;
+}
+
+#curor{
+    animation: blink 0.5s  infinite;
+}
 
 .container-intro{
     width: 1580px;
@@ -201,87 +251,120 @@ a{
 }
 
 .asteroid{
-    left: 1640px;
-    top: 150px;
+    left: 1660px;
+    top: 170px;
 }
 
 .orbit{
     left: 65px;
-    top: 810px;
+    top: 830px;
+}
+/* ========================================= */
+
+#secProfile,#secwork,#secAct{
+    margin-top: 10px;
+    max-height: 1000%;
+    padding: 20px;
+    padding-top:5em ;
 }
 
-/* --------------------------------------------------------------------------------------------------- */
-#section1{
-    background-size: cover;
-    width: 100%;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    background:url('https://pwat.co.th/pw2016-files/2022/01/space-travel-02.jpg'); 
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-top: 10rem; 
-    padding: 10rem;
-    
+#menu-profile,#menu-work,#menu-Activities{
+    cursor: pointer;
 }
 
-.profile{
-    width: 1580px;
+
+/* ========================================= */
+
+.head-sec{
     display: flex;
-    justify-content: space-evenly;
-}
-
-.content{
-    width: 1500px;
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.178);
-    border: 5px solid #0094FF;
-    box-shadow: 0px 0px 10px 5px rgba(0, 148, 255, 0.85);
-    border-radius: 10px;
+    align-items: center;
     padding: 10px;
-    position: relative;
-    z-index: 997;
+}
+
+.mainPro{
+    width: 100%;
+    height: 100%;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowPo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 5px;
+}
+
+.container{
+    width: 855px;
+    height: 500px;
+    background-color: #ffffff3b;
+    padding: 10px;
+    border: solid 5px #18db32;
+    border-radius: 10px;
     overflow: hidden;
 }
 
-.head-content{
+.info-group{
     display: flex;
     align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 5px;
 }
 
-.main-content{
+.icon-info{
+    background-color: #c700a6;
+    padding: 5px;
+}
+
+.info-group p{
+    width: 100%;
+    color: #CA0000;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    justify-content: center;
 }
 
-.contact{
-    width: 1580px;
-    display: flex;
-    justify-content: space-evenly;
-    z-index: 998;
-    margin-top: 5rem;
-}
+/* ========================================= */
 
-.group-text-contact{
-    display: flex;
-    align-items: center;
-}
-
-
-/* --------------------------------------------------------------------------------------------------- */
 @keyframes intro {
-from {
-    border: 5px solid #48ff00;
-    box-shadow: 0px 0px 10px 5px rgba(0, 255, 85, 0.85);
-}
-to {
-    border: 5px solid rgb(255, 34, 34);
-    box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.85);
-}
+    from {
+        border: 5px solid #48ff00;
+        box-shadow: 0px 0px 10px 5px rgba(0, 255, 85, 0.85);
+    }
+    to {
+        border: 5px solid rgb(255, 34, 34);
+        box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.85);
+    }
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
 }
 
+@keyframes blink {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+}
