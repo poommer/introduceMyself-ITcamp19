@@ -187,7 +187,8 @@ ul{
 
 .social-icon{
     height: 25px; 
-    width: 25px;transition: .2s ease;
+    width: 25px;
+    transition: .2s ease;
 }
 
 .social-icon:hover{
@@ -290,6 +291,8 @@ ul{
     justify-content: center;
 }
 
+
+
 .rowPo{
     width: 100%;
     display: flex;
@@ -308,12 +311,25 @@ ul{
 
 .container{
     width: 855px;
-    height: 500px;
+    height: 650px;
     background-color: #ffffff3b;
-    padding: 10px;
+    padding: 5px;
     border: solid 5px #18db32;
     border-radius: 10px;
     overflow: hidden;
+}
+
+iframe{
+    display: none;
+}
+
+.BasicInfo,.contact, .edu{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+    align-items: center; 
+    width: 100%; 
+    height: 100%;
 }
 
 .info-group{
@@ -326,7 +342,7 @@ ul{
 }
 
 .icon-info{
-    background-color: #c700a6;
+    background-color: #BB3AAA;
     padding: 5px;
 }
 
@@ -336,6 +352,90 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* ========================================= */
+.main-contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-group{
+    display: flex ; 
+    align-items: center;
+    margin: 10px;
+    width: 120px; 
+    height: 120px; 
+    border-radius: 100%; 
+    padding: 10px; 
+    background-color: rgb(255, 255, 255); 
+    z-index: 1;
+    cursor: pointer;
+}
+
+.contact-group:hover{
+    width: 130px;
+    height: 130px;
+    background-color: #e6e6e6;
+    border-radius: 80%; 
+    transition: .2s ease;
+}
+
+.contact-data{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%; 
+    max-height: 100px; 
+    padding: 5px; 
+    background-color: #BB3AAA;
+    
+}
+
+.contact-data p{ 
+    background-color: #fff;
+    min-width: 100%; 
+    color: #BB3AAA;
+    padding: 5px;
+    border-radius: 10px;
+     
+}
+
+.contact-data-active{
+    
+    display: flex;
+}
+/* ========================================= */
+.container-card-edu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-edu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 450px;
+    height: 160px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.card-edu-head{
+    display: flex;
+}
+
+.card-edu-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ========================================= */
@@ -367,4 +467,17 @@ ul{
     50%{
         opacity: 0%;
     }
+}
+
+
+.test{
+    background-color: #0094FF;
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    animation:spin 3s alternate;
 }
