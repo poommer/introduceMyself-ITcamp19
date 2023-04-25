@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/uranus.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    
     <title>poommer | introduceMyself-IT Camp19</title>
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <a href="#" style="display: flex; justify-content: center; align-items: center; ">
+            <div onclick="gototop()" style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
                 <img src="img/uranus.png" alt="" style="width: 60px; height: 60px;">
                 <div class="text-group">
                     <img src="img/logo.png" alt="" style="width: 146px; height: 29px; ">
                     <p>welcome to poommerWeb :)</p>
                 </div>
-            </a>
+            </div>
             <button id="btn-hamburger" onclick="openNav()">
                 <img src="img/hamburger (1).png" alt="" style="width: 100%; height: 100%;">
             </button>
@@ -111,9 +111,8 @@
                             เพื่อค้นหาและได้ลงมือทำ ว่ามันจะตอบโจทย์รึเปล่า <b>สุดท้ายอยากฝากตัวกับพี่ ๆ
                                 รับผมไว้พิจารณาด้วยนะคั้บ ผมอยากเข้าร่วมและอยากเจอพี่ ๆ มากครับ</b><br><br>
 
-                            <span style="color: #00e626; text-align: center;">***สำหรับเว็บนี้จะประกอบไปด้วย 3 หัวข้อคือ
-                                @ประวัติส่วนตัว @ผลงาน @กิจกรรมที่เข้าร่วม พี่ ๆ
-                                สามารถคลิ๊กตามเมนูตรงheaderได้เลยครับ***</span>
+                            <span style="color: #00e626; text-align: center;">*** สำหรับเว็บนี้จะประกอบไปด้วย 3 หัวข้อคือ
+                                @ประวัติส่วนตัว @ผลงาน @กิจกรรมที่เข้าร่วม ***</span>
                         </p><br>
                     </div>
 
@@ -124,7 +123,8 @@
         </section>
 
         <section id="secProfile">
-            <div class="head-sec" style="background-color: #08362D; box-shadow: 0px 0px 10px 5px rgba(21, 255, 0, 0.85);">
+            <div class="head-sec"
+                style="background-color: #08362D; box-shadow: 0px 0px 10px 5px rgba(21, 255, 0, 0.85);">
                 <img src="img/capricorn (2).png" alt="" class="img-nav"
                     style="background:#0c5700; width: 80px; height: 80px;">
                 <div class="text-group">
@@ -136,194 +136,310 @@
             <div class="mainPro">
                 <div class="rowPo" style="margin-top: 20px;">
                     <div class="container">
-                        
+
                         <div class="BasicInfo">
                             <div class="row">
                                 <h1>ข้อมูลพื้นฐาน</h1>
                             </div>
                             <div class="row">
-                            <div class="info-group" style="width: 390px;">
-                                <img src="img/user.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
-                                <p>นายสิริภูมิ หลิมสุนทร (ภูมิ)</p>
+                                <div class="info-group" style="width: 390px;">
+                                    <img src="img/user.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                    <p>นายสิริภูมิ หลิมสุนทร (ภูมิ)</p>
+                                </div>
+
+                                <div class="info-group" style="width: 390px;">
+                                    <img src="img/cake.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
+                                    <p>27 มกราคม 2550 (16ปี)</p>
+                                </div>
                             </div>
 
-                            <div class="info-group" style="width: 390px;">
-                                <img src="img/cake.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
-                                <p>27 มกราคม 2550 (16ปี)</p>
+                            <div class="row">
+                                <div class="info-group" style="width: 258px;">
+                                    <img src="img/passport.png" class="icon-info" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <p>ไทย</p>
+                                </div>
+
+                                <div class="info-group" style="width: 258px;">
+                                    <img src="img/united-nations.png" class="icon-info" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <p>ไทย</p>
+                                </div>
+
+                                <div class="info-group" style="width: 258px;">
+                                    <img src="img/religion.png" class="icon-info" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <p>พุทธ</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="info-group" style="width: 785px;">
+                                    <img src="img/motivation.png" class="icon-info" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <p>ถอยห่างจากคนที่ไม่ให้เกียรติแล้วให้ความสำคัญกับคนที่ให้เกียรติเรา</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="info-group" style="width: 785px;">
+                                    <img src="img/hobbies.png" class="icon-info" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <p>ฟังเพลง นอน ศึกษาหาความรู้เกี่ยวกับการเขียนโปรแกรม</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="info-group" style="width: 390px;">
+                                    <img src="img/father.png" class="icon-info" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <p>นายนพรัตน์ หลิมสุนทร</p>
+                                </div>
+
+                                <div class="info-group" style="width: 390px;">
+                                    <img src="img/career.png" class="icon-info" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <p>ลูกจ้างชั่วคราว</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="info-group" style="width: 390px;">
+                                    <img src="img/maternity.png" class="icon-info" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <p>นางทัศนีย์ เจริญสุข</p>
+                                </div>
+
+                                <div class="info-group" style="width: 390px;">
+                                    <img src="img/career.png" class="icon-info" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <p>พนักงานราชการ</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="info-group" style="width: 258px;">
-                                <img src="img/passport.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
-                                <p>ไทย</p>
-                            </div>
-
-                            <div class="info-group" style="width: 258px;">
-                                <img src="img/united-nations.png" class="icon-info" alt=""
-                                    style="width: 45px; height: 45px;">
-                                <p>ไทย</p>
-                            </div>
-
-                            <div class="info-group" style="width: 258px;">
-                                <img src="img/religion.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
-                                <p>พุทธ</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="info-group" style="width: 785px;">
-                                <img src="img/motivation.png" class="icon-info" alt=""
-                                    style="width: 45px; height: 45px;">
-                                <p>ถอยห่างจากคนที่ไม่ให้เกียรติแล้วให้ความสำคัญกับคนที่ให้เกียรติเรา</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="info-group" style="width: 785px;">
-                                <img src="img/hobbies.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
-                                <p>ฟังเพลง นอน ศึกษาหาความรู้เกี่ยวกับการเขียนโปรแกรม</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="info-group" style="width: 390px;">
-                                <img src="img/father.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
-                                <p>นายนพรัตน์ หลิมสุนทร</p>
-                            </div>
-
-                            <div class="info-group" style="width: 390px;">
-                                <img src="img/career.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
-                                <p>ลูกจ้างชั่วคราว</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="info-group" style="width: 390px;">
-                                <img src="img/maternity.png" class="icon-info" alt=""
-                                    style="width: 45px; height: 45px;">
-                                <p>นางทัศนีย์ เจริญสุข</p>
-                            </div>
-
-                            <div class="info-group" style="width: 390px;">
-                                <img src="img/career.png" class="icon-info" alt="" style="width: 45px; height: 45px;">
-                                <p>พนักงานราชการ</p>
-                            </div>
-                        </div>
-                        </div>
-                        
                     </div>
 
                     <div class="container">
                         <div class="contact">
-                             <h1>การติดต่อ</h1>
-                        <div class="row" style="display: flex; justify-content: center;">
-                            <iframe
-                                
-                                id="iframe-link" width="350" height="120" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-
-                         <div class="row" style="justify-content: center;">
-                                <div id="contact-data" class="contact-data"><p id="show-data-contact"></p></div>
+                            <h1>การติดต่อ</h1>
+                            <div class="row" style="display: flex; justify-content: center;">
+                                <iframe id="iframe-link" width="350" height="120" style="border:0;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
                             </div>
-                        <div class="row" style="justify-content: center;">
 
-                                <a href="https://goo.gl/maps/QvJn5RDuCjNrMuUn8" target="_blank" rel="noopener noreferrer" id="address" class="contact-group" data-iframe-link="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d671.9110424844072!2d100.51912570263464!3d13.829158810808332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b783a0a063f%3A0xe572995cfc915328!2zMTAxLzM2IOC4geC4o-C4uOC4h-C5gOC4l-C4ni3guJnguJnguJfguJrguLjguKPguLUg4LmB4LiC4Lin4LiH4Lin4LiH4Lio4LmM4Liq4Lin4LmI4Liy4LiHIOC5gOC4guC4leC4muC4suC4h-C4i-C4t-C5iOC4rSDguIHguKPguLjguIfguYDguJfguJ7guKHguKvguLLguJnguITguKMgMTA4MDA!5e0!3m2!1sth!2sth!4v1682162387182!5m2!1sth!2sth" data-contact="101/36 ซอยวัดเลียบราษฎร์บำรุง แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพมหานคร 10800" onmouseover="hoverContact('address')" onmouseout="NotHoverContact('address')"><img src="img/home-address.png" alt="" style="width: 100%; height: 100%;"> </a>  
-                                <a href="tel:0626424077" target="_blank" rel="noopener noreferrer" id="tel" data-contact="0626424077" class="contact-group" data-iframe-link="" onmouseover="hoverContact('tel')" onmouseout="NotHoverContact('tel')"><img src="img/calling.png" alt="" style="width: 100%; height: 100%;"></a> 
-                                <a href="mailto:12345siripoom6789@gmail.com?subject='ติดต่อสิริภูมิ'" target="_blank" rel="noopener noreferrer" class="contact-group" data-iframe-link="http://www.linkedin.com/in/siripoom-lim" id="Email" data-contact="12345siripoom6789@gmail.com" onmouseover="hoverContact('Email')" onmouseout="NotHoverContact('Email')"><img src="img/email (2).png" alt="" style="width: 100%; height: 100%;"></a> 
-                                <a href="http://www.linkedin.com/in/siripoom-lim" target="_blank" rel="noopener noreferrer" id="linkedinA" class="contact-group" data-iframe-link="" data-contact="linkedin.com/in/siripoom-lim" onmouseover="hoverContact('linkedinA')" onmouseout="NotHoverContact('linkedinA')"><img src="img/linkedin (2).png" alt="" style="width: 100%; height: 100%;" ></a> 
+                            <div class="row" style="justify-content: center;">
+                                <div id="contact-data" class="contact-data">
+                                    <p id="show-data-contact"></p>
+                                </div>
                             </div>
                             <div class="row" style="justify-content: center;">
-                                <a href="http://www.facebook.com/siripoom.limsoonthorn" target="_blank" rel="noopener noreferrer" id="facebook" class="contact-group" data-iframe-link="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%3Ffbid%3D870415750856110%26set%3Da.106325103931849&width=120&show_text=false&height=350&appId" data-contact="Siripoom limsoonthorn" onmouseover="hoverContact('facebook')" onmouseout="NotHoverContact('facebook')"><img src="img/facebook (2).png" alt="" style="width: 100%; height: 100%;"></a> 
-                                <a href="http://www.instagram.com/pppoommer/" target="_blank" rel="noopener noreferrer" id="ig" data-contact="pppoommer" class="contact-group" data-iframe-link="" onmouseover="hoverContact('ig')" onmouseout="NotHoverContact('ig')"><img src="img/instagram (2).png" alt="" style="width: 100%; height: 100%;"></a> 
-                                <a href="https://line.me/ti/p/aSw5ocHPJW" target="_blank" rel="noopener noreferrer" id="lineID" data-contact="ppppoommmerr" class="contact-group" data-iframe-link="" onmouseover="hoverContact('lineID')" onmouseout="NotHoverContact('lineID')"><img src="img/line (2).png" alt="" style="width: 100%; height: 100%;"></a> 
-                                <a href="https://github.com/poommer" target="_blank" rel="noopener noreferrer" id="githubA" data-contact="github.com/poommer" class="contact-group" data-iframe-link="https://github.com/poommer" onmouseover="hoverContact('githubA')" onmouseout="NotHoverContact('githubA')"><img src="img/social.png" alt="" style="width: 100%; height: 100%;"></a> 
-                            </div>
-                        </div>
-                       
-                            </div>
 
-
+                                <a href="https://goo.gl/maps/QvJn5RDuCjNrMuUn8" target="_blank"
+                                    rel="noopener noreferrer" id="address" class="contact-group"
+                                    data-iframe-link="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d671.9110424844072!2d100.51912570263464!3d13.829158810808332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b783a0a063f%3A0xe572995cfc915328!2zMTAxLzM2IOC4geC4o-C4uOC4h-C5gOC4l-C4ni3guJnguJnguJfguJrguLjguKPguLUg4LmB4LiC4Lin4LiH4Lin4LiH4Lio4LmM4Liq4Lin4LmI4Liy4LiHIOC5gOC4guC4leC4muC4suC4h-C4i-C4t-C5iOC4rSDguIHguKPguLjguIfguYDguJfguJ7guKHguKvguLLguJnguITguKMgMTA4MDA!5e0!3m2!1sth!2sth!4v1682162387182!5m2!1sth!2sth"
+                                    data-contact="101/36 ซอยวัดเลียบราษฎร์บำรุง แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพมหานคร 10800"
+                                    onmouseover="hoverContact('address')" onmouseout="NotHoverContact('address')"><img
+                                        src="img/home-address.png" alt="" style="width: 100%; height: 100%;"> </a>
+                                <a href="tel:0626424077" target="_blank" rel="noopener noreferrer" id="tel"
+                                    data-contact="0626424077" class="contact-group" data-iframe-link=""
+                                    onmouseover="hoverContact('tel')" onmouseout="NotHoverContact('tel')"><img
+                                        src="img/calling.png" alt="" style="width: 100%; height: 100%;"></a>
+                                <a href="mailto:12345siripoom6789@gmail.com?subject='ติดต่อสิริภูมิ'" target="_blank"
+                                    rel="noopener noreferrer" class="contact-group"
+                                    data-iframe-link="http://www.linkedin.com/in/siripoom-lim" id="Email"
+                                    data-contact="12345siripoom6789@gmail.com" onmouseover="hoverContact('Email')"
+                                    onmouseout="NotHoverContact('Email')"><img src="img/email (2).png" alt=""
+                                        style="width: 100%; height: 100%;"></a>
+                                <a href="http://www.linkedin.com/in/siripoom-lim" target="_blank"
+                                    rel="noopener noreferrer" id="linkedinA" class="contact-group" data-iframe-link=""
+                                    data-contact="linkedin.com/in/siripoom-lim" onmouseover="hoverContact('linkedinA')"
+                                    onmouseout="NotHoverContact('linkedinA')"><img src="img/linkedin (2).png" alt=""
+                                        style="width: 100%; height: 100%;"></a>
+                            </div>
+                            <div class="row" style="justify-content: center;">
+                                <a href="http://www.facebook.com/siripoom.limsoonthorn" target="_blank"
+                                    rel="noopener noreferrer" id="facebook" class="contact-group"
+                                    data-iframe-link="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%3Ffbid%3D870415750856110%26set%3Da.106325103931849&width=120&show_text=false&height=350&appId"
+                                    data-contact="Siripoom limsoonthorn" onmouseover="hoverContact('facebook')"
+                                    onmouseout="NotHoverContact('facebook')"><img src="img/facebook (2).png" alt=""
+                                        style="width: 100%; height: 100%;"></a>
+                                <a href="http://www.instagram.com/pppoommer/" target="_blank" rel="noopener noreferrer"
+                                    id="ig" data-contact="pppoommer" class="contact-group" data-iframe-link=""
+                                    onmouseover="hoverContact('ig')" onmouseout="NotHoverContact('ig')"><img
+                                        src="img/instagram (2).png" alt="" style="width: 100%; height: 100%;"></a>
+                                <a href="https://line.me/ti/p/aSw5ocHPJW" target="_blank" rel="noopener noreferrer"
+                                    id="lineID" data-contact="ppppoommmerr" class="contact-group" data-iframe-link=""
+                                    onmouseover="hoverContact('lineID')" onmouseout="NotHoverContact('lineID')"><img
+                                        src="img/line (2).png" alt="" style="width: 100%; height: 100%;"></a>
+                                <a href="https://github.com/poommer" target="_blank" rel="noopener noreferrer"
+                                    id="githubA" data-contact="github.com/poommer" class="contact-group"
+                                    data-iframe-link="https://github.com/poommer" onmouseover="hoverContact('githubA')"
+                                    onmouseout="NotHoverContact('githubA')"><img src="img/social.png" alt=""
+                                        style="width: 100%; height: 100%;"></a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="rowPo" style="margin-top: 20px;">
-                    <div class="container">
-                        
-                        <div class="edu">
-                            <h1>การศึกษา</h1>
-                            <div class="container-card-edu">
-                            <div class="row" style=" width: 600px; align-items: center; justify-content: space-between; margin: 3px;">
-                                 <img src="img/poom3.png" alt="" style="height: 120px;">
-                               <div class="card-edu" style="border: solid 5px #104800; box-shadow: 0px 0px 8px 3px #00d836;">
-                            <div class="card-edu-head">
-                                <img src="img/logo-watlanb.png" alt="" style="width: 55px; height: 55px;">
-                                <div class="text-group" >
-                                    <p><b style="color: #baffa7;">โรงเรียนวัดเลียบราษฎร์บำรุง</b></p>
-                                    <p style="color: #baffa7;">ปีการศึกษา2556 - 2561</p>
-                                </div>
-                            </div>
-                            <div class="card-edu-main">
-                                <h3>ระดับชั้นประถมศึกษา</h3> 
-                            </div>
-                        </div> 
-                            </div>
-                        
-                            <div class="row" style=" width: 600px; align-items: center; justify-content: space-between; margin: 3px;">
-                                                    <div class="card-edu" style="border: solid 5px #3c013d; box-shadow: 0px 0px 8px 3px #e607e6;">
-                            <div class="card-edu-head">
-                                <img src="img/logoMPN.png" alt="" style="width: 55px;">
-                                <div class="text-group">
-                                    <p><b style="color: #fd90ff;">โรงเรียนมัธยมประชาเวศน์</b></p>
-                                    <p style="color: #fd90ff;">ปีการศึกษา2562 - 2564</p>
-                                </div>
-                            </div>
-                            <div class="card-edu-main">
-                                <h3>ระดับชั้นมัธยมศึกษาตอนต้น</h3> 
-                            </div>
-                        </div>
-
-                        <img src="img/poom2.png" alt="" style="height: 120px;">
-    
-                            </div>
-                            
-<div class="row" style=" width: 600px; align-items: center; justify-content: space-between; margin: 3px;">
-    <img src="img/poom1.png" alt="" style="height: 120px;">
-                            <div class="card-edu" style="border: solid 5px #3c013d;box-shadow: 0px 0px 8px 3px #e607e6;">
-                            <div class="card-edu-head">
-                                <img src="img/R.png" alt="" style="width: 55px; height: 55px;">
-                                <div class="text-group" style="margin-left: 5px;">
-                                    <p><b style="color: #fd90ff;">วิทยาลัยอาชีวศึกษาอาชีวศึกษาธนบุรี</b></p>
-                                    <p style="color: #fd90ff;">ปีการศึกษา2565 - ปัจจุบัน</p>
-                                </div>
-                            </div>
-                            <div class="card-edu-main">
-                                <h5>ประกาศนียบัตรวิชาชีพ (ปวช.)</h5> 
-                                <h6>สาขางานเทคโนโลยีสารสนเทศ</h6>
-                            </div>
-                        </div> 
-                        
-</div>
-                           
-                        </div>
-                        </div>
-                        
 
                     </div>
 
-                    <div class="skill container">
-                        <h1>ทักษะและความสามารถ</h1>
-                    </div>
+
                 </div>
             </div>
+            </div>
+
+            <div class="rowPo" style="margin-top: 20px;">
+                <div class="container">
+
+                    <div class="edu">
+                        <h1>การศึกษา</h1>
+                        <div class="container-card-edu">
+                            <div class="row"
+                                style=" width: 600px; align-items: center; justify-content: space-between; margin: 3px;">
+                                <img src="img/poom3.png" alt="" style="height: 120px;">
+                                <div class="card-edu"
+                                    style="border: solid 5px #3d1e01; box-shadow: 0px 0px 8px 3px #e67307;">
+                                    <div class="card-edu-head">
+                                        <img src="img/logo-watlanb.png" alt="" style="width: 55px; height: 55px;">
+                                        <div class="text-group">
+                                            <p><b style="color: #e67307;">โรงเรียนวัดเลียบราษฎร์บำรุง</b></p>
+                                            <p style="color: #e67307;">ปีการศึกษา2556 - 2561</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-edu-main">
+                                        <h3>ระดับชั้นประถมศึกษา</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"
+                                style=" width: 600px; align-items: center; justify-content: space-between; margin: 3px;">
+                                <div class="card-edu"
+                                    style="border: solid 5px #3d1e01; box-shadow: 0px 0px 8px 3px #e67307;">
+                                    <div class="card-edu-head">
+                                        <img src="img/logoMPN.png" alt="" style="width: 55px;">
+                                        <div class="text-group">
+                                            <p><b style="color: #e67307;">โรงเรียนมัธยมประชาเวศน์</b></p>
+                                            <p style="color: #e67307;">ปีการศึกษา2562 - 2564</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-edu-main">
+                                        <h3>ระดับชั้นมัธยมศึกษาตอนต้น</h3>
+                                    </div>
+                                </div>
+
+                                <img src="img/poom2.png" alt="" style="height: 120px;">
+
+                            </div>
+
+                            <div class="row"
+                                style=" width: 600px; align-items: center; justify-content: space-between; margin: 3px;">
+                                <img src="img/poom1.png" alt="" style="height: 120px;">
+                                <div class="card-edu"
+                                    style="border: solid 5px #3d1e01;box-shadow: 0px 0px 8px 3px #e67307;">
+                                    <div class="card-edu-head">
+                                        <img src="img/R.png" alt="" style="width: 55px; height: 55px;">
+                                        <div class="text-group" style="margin-left: 5px;">
+                                            <p><b style="color: #e67307;">วิทยาลัยอาชีวศึกษาอาชีวศึกษาธนบุรี</b></p>
+                                            <p style="color: #e67307;">ปีการศึกษา2565 - ปัจจุบัน</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-edu-main">
+                                        <h5>ประกาศนียบัตรวิชาชีพ (ปวช.)</h5>
+                                        <h6>สาขางานเทคโนโลยีสารสนเทศ</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
 
 
+                </div>
+
+                <div class="container">
+                    <div class="skill" style="">
+                        <h1>ทักษะและความสามารถ</h1>
+
+                        <div class="hard-Skill" style=" width: 100%;">
+                            <div style="margin-left: 15px;">
+                                <h1>
+                                programming skill</h1>
+                            </div>
+                            <div class="main-hard-skill">
+                                <div class="row" style="justify-content: center;">
+                                    <div class="hard-group">
+                                    <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="" style="width: 64px; height: 64px;">
+                                    <h3>html</h3>
+                                    <p>Level: <b style="color: #e67307;">Basic</b></p>
+                                </div>
+
+                                <div class="hard-group">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="" style="width: 64px; height: 64px;">
+                                    <h3>css</h3>
+                                    <p>Level: <b style="color: #e67307;">Basic</b></p>
+                                </div>
+
+                                <div class="hard-group">
+                                    <img src="https://logospng.org/download/javascript/logo-javascript-icon-512.png" alt="" style="width: 64px; height: 64px;">
+                                    <h3>javaScript</h3>
+                                    <p>Level: <b style="color: #e67307;">Basic</b></p>
+                                </div>
+                                <div class="hard-group">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" alt="" style=" height: 64px;">
+                                    <h3>PHP</h3>
+                                    <p>Level: <b style="color: #e67307;">Basic</b></p>
+                                </div>
+
+                                <div class="hard-group">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="" style=" height: 64px;">
+                                    <h3>python</h3>
+                                    <p>Level: <b style="color: #e67307;">Basic</b></p>
+                                </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="hard-Skill" style=" width: 100%;">
+                            <div style="margin-left: 15px;">
+                                <h1>
+                                soft skill</h1>
+                            </div>
+                            <div class="main-hard-skill">
+                                <div class="row" style="justify-content: center;">
+                                    <div class="hard-group" style="width: 250px;">
+                                    <img src="img/meeting.png" alt="" style="width: 95px; height: 95px;">
+                                    <h3>Teamwork skill</h3>
+                                </div>
+
+                                <div class="hard-group" style="width: 250px;">
+                                    <img src="img/emotional.png" alt="" style="width: 95px; height: 95px;">
+                                    <h3>Emotional Skill</h3>
+                                </div>
+
+                                <div class="hard-group" style="width: 250px;">
+                                    <img src="img/creativity.png" alt="" style="width: 95px; height: 95px;">
+                                    <h3>Creativity</h3>
+                                </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
         </section>
 
-        <section id="secwork" style="height: 2000px;">
+        <section id="intro2">
+            <img src="img/poom.png" alt="" style="animation:spin360 5s 2s infinite;">
+            <h1 style="margin-top: 10px; background-color: rgba(255, 255, 255, 0.308); padding: 30px; border: solid 5px #d4ad00; border-radius: 15%;"><span id="text-intro2"></span><span id="curor">|</span></h1>
+        </section>
+
+        <section id="secwork">
             <div class="head-sec" style="background-color: #ee22aa;">
                 <img src="img/telescope.png" alt="" class="img-nav"
                     style="background:#921a60; width: 80px; height: 80px;">
@@ -334,7 +450,104 @@
             </div>
 
 
-            <div class="test"></div>
+            <div class="main-work" style=" width: 100%; height: 100%;">
+                <div class="menu-work">
+                    <div class="group-menu-work" >
+                        <h4>TREM-MAI Project</h4>
+                        <p style="font-size: 115%;">Final Project รายวิชาพัฒนาเว็บด้วยภาษาและเทคโนโลยีเว็บทันสมัย เป็นเว็บไซต์เกี่ยวกับการบริการเติมเงิน เติมเกม และสตรีมมิ่ง</p>
+                        <span style="width: 100%;">
+                            <p>
+                            เครื่องมือที่ใช้เครื่องมือที่ใช้พัฒนา:<br><span style="background-color: #777BB3;  padding: 2px; border-radius: 10px;">PHP</span> <span style="background-color: #264DE4; padding: 2px; border-radius: 10px;">CSS</span> <span style="background-color: #F4CB0B; padding: 2px; border-radius: 10px;">JavaScript</span>  <span style="background-color: #7011F5; padding: 2px; border-radius: 10px;">Bootstrap</span>
+                            </p>
+                        </span>
+                        <button id="btn-trem-mai" onclick="moreWork('trem-mai','rabbit-jumping','strickerLine')">ดูรายละเอียด</button>
+                    </div>
+                    <div class="group-menu-work" style="margin-top: 10px;">
+                        <h4>rabbit's-jumping</h4>
+                        <p style="font-size: 115%;">Project รายวิชาารสร้างเกมคอมพิวเตอร์เบื้องต้น เป็นเกมแพลตฟอร์ม เกมแคร์รอตไปเรื่อย ๆ</p>
+                        <span style="width: 100%;">
+                            <p>
+                            เครื่องมือที่ใช้เครื่องมือที่ใช้พัฒนา:<br><span style="background-color: #535353;  padding: 2px; border-radius: 10px;">construct 2</span>
+                            </p>
+                        </span>
+                        <button id="btn-rabbit-jumping" onclick="moreWork('rabbit-jumping','trem-mai','strickerLine')">ดูรายละเอียด</button>
+                    </div>
+
+                    <div class="group-menu-work" style="margin-top: 10px;">
+                        <h4>Song ngan kru was</h4>
+                        <p style="font-size: 115%;">Final Project รายวิชาการสร้างงภาคเคลื่อนไหว เป็นสติ๊กเกอร์สำหรับใช้ในไลน์</p>
+                        <span style="width: 100%;">
+                            <p>
+                            เครื่องมือที่ใช้เครื่องมือที่ใช้พัฒนา:<br><span style="background-color: #000a9b;  padding: 2px; border-radius: 10px;">Adobe Animate</span> 
+                            </p>
+                        </span>
+                        <button id="btn-strickerLine" onclick="moreWork('strickerLine','trem-mai','rabbit-jumping')">ดูรายละเอียด</button>
+                    </div>
+                    
+                </div>
+
+                <div class="show-work show-work-active" id="trem-mai">
+                    <div class="container-show-work">
+                        <div class="head-show-work">
+                            <p style="color: #d4d4d4;">project name</p>
+                            <h1>TREM-MAI Project</h1>
+                        </div>
+
+                        <div class="main-show-work">
+                            <div class="group-img">
+                                <img src="img/ex-tremMai1.png" alt="" class="img-work">
+                                <img src="img/ex-tremMai2.png" alt="" class="img-work">
+                                <img src="img/ex-tremMai3.png" alt="" class="img-work">
+                            </div>
+                            <p style="margin-top: 15px;"><b>trem-mai</b> เป็นFinal Project รายวิชาพัฒนาเว็บด้วยภาษาและเทคโนโลยีเว็บทันสมัย trem-mai คือ เป็นเว็บไซต์เกี่ยวกับการบริการเติมเงิน เติมเกม และสตรีมมิ่งต่าง ๆ โดยพัฒนาโดยใช้ภาษา PHP CSS JavaScript และ Bootstap เนื่องจากระยะเวลาที่จำกัดทำให้สโคปของงานเป็นเพียงแค่หน้าเว็บ(fond end) ยังไม่ได้ลงระบบหลังบ้าน(Back end) สำหรับ trem-mai คือเว็บไซต์แรกของผมอาจจะมีข้อผิดพลาดเล็กน้อย แต่ผมกำลังนำกลับมาพัฒนาให้เกิดข้อผิดพลาดน้อยสุดและลงส่วนระบบหลังบ้าน</p>
+                        </div>
+                    </div>
+                    <div class="link-work">
+                        <h5>สามารถรับชมเว็บไซต์ได้ที่: https://www.poomlimsiri.lnw.mn/top-up-project/ หรือ <a href="https://www.poomlimsiri.lnw.mn/top-up-project/" target="_blank"><u>คลิ๊กที่นี่</u></a> </h5>
+                    </div>
+                </div>
+
+                <div class="show-work" id="rabbit-jumping">
+                    <div class="container-show-work">
+                        <div class="head-show-work">
+                            <p style="color: #d4d4d4;">project name</p>
+                            <h1>rabbit's-jumping Project</h1>
+                        </div>
+
+                        <div class="main-show-work">
+                            <div class="group-img">
+                                <img src="img/ex-jump1.png" alt="" style="height: 520px; margin: 5px;">
+                                <img src="img/ex-jump2.png" alt="" style="height: 520px; margin: 5px;">
+                                <img src="img/ex-jump3.png" alt="" style="height: 520px; margin: 5px;">
+                            </div>
+                            <p style="margin-top: 15px;"><b>rabbit's-jumping</b> เป็น Project รายวิชาารสร้างเกมคอมพิวเตอร์เบื้องต้น rabbit's-jumping คือ เกมแนวแพลตฟอร์ม ที่พัฒนาด้วยโปรแกรม construct 2 จุดมุ่งหมายของเกมคือเก็บแคร์รอตไปเรื่อย ๆ แคร์รอต 1 หัว เท่ากับ 1 คะแนน โดยใช้ปุ่ม ลูกศรซ้าย-ขวา บนคีย์บอร์ด หรือ ในหน้าwindow ในการควบคุมทิศทาง</p>
+                        </div>
+                    </div>
+                    <div class="link-work">
+                        <h5>สามารถรับชมเว็บไซต์ได้ที่: http://poomlimsiri.lnw.mn/rabbit's-jumping หรือ <a href="http://poomlimsiri.lnw.mn/rabbit's-jumping/" target="_blank"><u>คลิ๊กที่นี่</u></a> </h5>
+                    </div>
+                </div>
+
+                <div class="show-work" id="strickerLine">
+                    <div class="container-show-work">
+                        <div class="head-show-work">
+                            <p style="color: #d4d4d4;">project name</p>
+                            <h1>Song Ngan Kru Was Project</h1>
+                        </div>
+
+                        <div class="main-show-work">
+                            <div class="group-img">
+                                <img src="img/ex-line.png" alt="" style="height: 520px; margin: 5px;">
+                            </div>
+                            <p style="margin-top: 15px;"><b>Song Ngan Kru Was</b>คือ สติ๊กเกอร์ไลน์ที่วางขายจริงใน line store และเป็น Final Project รายวิชาการสร้างงภาคเคลื่อนไหว สร้างด้วยโปรแกรม Adobe Animate สำหรับงานนี้ผมภูมิใจมาก เป็นเดอะแบกของห้อง ทำเสร็จก่อนทำให้ทราบและวิธีแก้ไขปัญหาต่าง ๆ ช่วยให้เพื่อนทำงานได้ง่ายขึ้นเมื่อเกิดปัญหา</p>
+                        </div>
+                    </div>
+                    <div class="link-work">
+                        <h5>สามารถรับชมเว็บไซต์ได้ที่: https://store.line.me/stickershop/product/22125469/th หรือ <a href="https://store.line.me/stickershop/product/22125469/th" target="_blank"><u>คลิ๊กที่นี่</u></a> </h5>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <section id="secAct">
@@ -345,9 +558,151 @@
                     <h3>Activities</h3>
                 </div>
             </div>
+
+            <div class="main-Act">
+                <div class="crad-Act">
+                    <div class="crad-Act-container">
+                        <div class="crad-Act-img" style="background-color: #264DE4; ">
+                            <div class="Act-img-container">
+                                <div class="Act-img fade">
+                                    <img src="img/act1-1.png" style="width:460px;  width:100%;">
+                                </div>
+                        
+                                <div class="Act-img fade">
+                                    <img src="img/act1-2.png" style="width:460px; width:100%;;">
+                                </div>
+                        
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="crad-Act-head">
+                            <p class="date"><span><img src="img/calendar.png" alt="" style="width: 18px; height: 18px; margin-right: 5px;"></span>1 กรกฎาคม 2565</p>
+                            <p class="location"><span><img src="img/location.png" alt="" style="width: 18px; height: 18px; margin-right: 5px;"></span>วิทยาลัยอาชีวศึกษาอาชีวศึกษาธนบุรี</p>
+                        </div>
+                <hr style="border: solid 0.5px #cccccc; width: 80%;">
+                        <div class="crad-Act-main">
+                            <h1>กิจกรรมพบพี่เลี้ยงจาก IBM ภายใต้โครงการ P-TECH ร่วมกับ บริษัท IBM ประเทศไทย</h1>
+                            <p>เข้าร่วมกิจกรรมพบพี่เลี้ยง เพื่อพูดคุย แลกเปลี่ยน ตลอดจนให้ความรู้ โดยครั้งนี้พี่เลี้ยงได้ให้ความรู้และการเตรียมตัวรวมถึงกำลังใจ ในการสอบกลางภาคเรียนที่1/2565</p>
+                        </div>
+                        <hr style="border: solid 0.5px #cccccc; width: 80%;">
+                        <div class="crad-Act-footer"> 
+                            <h6>Hard Skiils & Soft Skills</h6>
+                            <div style="display: flex; color: #fff; font-size: 80%;">
+                                <p style="background-color: #9D007B; border-radius:10px; padding: 5px;">Time Management</p>
+                                <p style="background-color: #9D007B; border-radius:10px; padding: 5px; margin-left: 5px;">Decision Making</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="crad-Act">
+                    <div class="crad-Act-container">
+                        <div class="crad-Act-img" style="background-color: #264DE4; ">
+                            <div class="Act-img-container">
+                                <div class="Act-img2 fade">
+                                    <img src="img/act2-1.png" style="width:460px;  width:100%;">
+                                </div>
+                        
+                                <div class="Act-img2 fade">
+                                    <img src="img/act2-2.png" style="width:460px; width:100%;;">
+                                </div>
+
+                                <div class="Act-img2 fade">
+                                    <img src="img/act2-3.png" style="width:460px; width:100%;;">
+                                </div>
+                        
+                                <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="crad-Act-head">
+                            <p class="date"><span><img src="img/calendar.png" alt="" style="width: 18px; height: 18px; margin-right: 5px;"></span>ตุลาคม 2565</p>
+                            <p class="location"><span><img src="img/location.png" alt="" style="width: 18px; height: 18px; margin-right: 5px;"></span>วิทยาลัยอาชีวศึกษาอาชีวศึกษาธนบุรี</p>
+                        </div>
+                <hr style="border: solid 0.5px #cccccc; width: 80%;">
+                        <div class="crad-Act-main">
+                            <h1>กิจกรรม JAVA P-TECH เรียนภาษา Java ในช่วงปิดเทอม กับพี่ ๆ จาก IBM ภายใต้โครงการ P-TECH ร่วมกับ บริษัท IBM ประเทศไทย</h1>
+                            <p>เข้าร่วมกิจกรรม JAVA P-TECH เรียนภาษาJava กับพี่ ๆ จาก IBM ภายใต้โครงการ P-TECH ในช่วงปิดเทอม เดือนตุลาคม จำนวน 12 ชั่วโมง</p>
+                        </div>
+                        <hr style="border: solid 0.5px #cccccc; width: 80%;">
+                        <div class="crad-Act-footer"> 
+                            <h6>Hard Skiils & Soft Skills</h6>
+                            <div style="display: flex; color: #fff; font-size: 80%;">
+                                <p style="background-color: #E0A307; border-radius:10px; padding: 5px;">Version Control Technology</p>
+                                <p style="background-color: #E0A307; border-radius:10px; padding: 5px; margin-left: 5px;">logic java</p>
+                                <p style="background-color: #9D007B; border-radius:10px; padding: 5px; margin-left: 5px;">Time Management</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="crad-Act">
+                    <div class="crad-Act-container">
+                        <div class="crad-Act-img" style="background-color: #264DE4; ">
+                            <div class="Act-img-container">
+                                <div class="Act-img3 fade">
+                                    <img src="img/act3-1" style="width:460px;  width:100%;">
+                                </div>
+                        
+                                <div class="Act-img3 fade">
+                                    <img src="img/act3-2.jpg" style="width:460px; width:100%;;">
+                                </div>
+
+                                <div class="Act-img3 fade">
+                                    <img src="img/act3-3.jpg" style="width:460px; width:100%;;">
+                                </div>
+
+                                <div class="Act-img3 fade">
+                                    <img src="img/act3-4.jpg" style="width:460px; width:100%;;">
+                                </div>
+
+                                <div class="Act-img3 fade">
+                                    <img src="img/act3-5.jpg" style="width:460px; width:100%;;">
+                                </div>
+                        
+                                <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="crad-Act-head">
+                            <p class="date"><span><img src="img/calendar.png" alt="" style="width: 18px; height: 18px; margin-right: 5px;"></span>17 กุมภาพันธ์ 2566</p>
+                            <p class="location"><span><img src="img/location.png" alt="" style="width: 18px; height: 18px; margin-right: 5px;"></span>บริษัท ไอบีเอ็ม ประเทศไทย</p>
+                        </div>
+                <hr style="border: solid 0.5px #cccccc; width: 80%;">
+                        <div class="crad-Act-main">
+                            <h1>ทัศศึกษา ณ บริษัท IBM สำนักงานใหญ่ ภายใต้โครงการ P-TECH ร่วมกับ บริษัท IBM ประเทศไทย</h1>
+                            <p>ทัศศึกษา ณ บริษัท IBM สำนักงานใหญ่ ได้เห็นการทำงาน พูดคุยกับพี่ๆ พนักงาน IBM ในแผนก Security และเป็นตัวแทนในการนำเสนอที่ได้พบและพูดคุยกับ ๆ ในแผนก</p>
+                        </div>
+                        <hr style="border: solid 0.5px #cccccc; width: 80%;">
+                        <div class="crad-Act-footer"> 
+                            <h6>Hard Skiils & Soft Skills</h6>
+                            <div style="display: flex; color: #fff; font-size: 80%;">
+                                <p style="background-color: #9D007B; border-radius:10px; padding: 5px;">Time Management</p>
+                                <p style="background-color: #9D007B; border-radius:10px; padding: 5px; margin-left: 5px;">Presentation</p>
+                                <p style="background-color: #9D007B; border-radius:10px; padding: 5px; margin-left: 5px;">Digital literacy</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
 
 </body>
 
 </html>
+<script src="js/script.js"></script>

@@ -323,10 +323,10 @@ iframe{
     display: none;
 }
 
-.BasicInfo,.contact, .edu{
+.BasicInfo,.contact, .edu, .skill{
     display: flex; 
     flex-direction: column; 
-    justify-content: space-around; 
+    justify-content: space-evenly; 
     align-items: center; 
     width: 100%; 
     height: 100%;
@@ -342,13 +342,13 @@ iframe{
 }
 
 .icon-info{
-    background-color: #BB3AAA;
+    background-color: #db8d18;
     padding: 5px;
 }
 
 .info-group p{
     width: 100%;
-    color: #CA0000;
+    color: rgb(202, 30, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -392,14 +392,14 @@ iframe{
     min-width: 100%; 
     max-height: 100px; 
     padding: 5px; 
-    background-color: #BB3AAA;
+    background-color: #db8d18;
     
 }
 
 .contact-data p{ 
     background-color: #fff;
     min-width: 100%; 
-    color: #BB3AAA;
+    color: #bb5e3a;
     padding: 5px;
     border-radius: 10px;
      
@@ -439,7 +439,276 @@ iframe{
 }
 
 /* ========================================= */
+.hard-Skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.hard-Skill h1{
+    background-color: #07070749; 
+    width: 290px; 
+    text-align: center; 
+    padding: 10px; 
+    border-radius: 10px; 
+    border: solid 5px #3d1e01; 
+    box-shadow: 0px 0px 8px 3px #e67307;
+    margin-left: 5px;
+}
+
+.hard-group{
+    width: 145px;
+    height: 155px;
+    background-color: #ffffff2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 8px;
+    padding: 5px;
+    border: solid 5px #3d1e01; box-shadow: 0px 0px 8px 1.5px #e67307;
+    border-radius: 10px;
+}
+
+/* ========================================= */
+
+#intro2{
+    width: 100%; 
+    height: 1000px;
+    background-image: url('https://www.nstda.or.th/sci2pub/wp-content/uploads/2022/01/Life-Science1.jpg'); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+}
+/* ========================================= */
+
+.main-work{
+    display: flex;
+}
+
+.menu-work{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 10px;
+
+}
+
+.menu-work button{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.menu-work button:hover{
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    transition: .2s ease;
+
+}
+
+.group-menu-work{
+    height: 320px;
+    background-color: #2193d4;
+    box-shadow: 0px 0px 8px 3px #2600ff;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.group-menu-work h4{
+    background-color: #ffffff; 
+    color: #18006d; 
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+.show-work{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    display: none;
+}
+
+.container-show-work{
+    width: 100%;
+    height: 800px;
+    background-color: #707070;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.head-show-work{
+    background-color: #18006d;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.main-show-work{
+    color: #585858;
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.group-img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-work{
+    width: 450px;
+    margin: 5px;
+}
+
+.link-work{
+    background-color: #1b79bd;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.show-work-active{
+    display: block;
+}
+/* ========================================= */
+
+.Act-img-container {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    margin: auto;
+    border: solid 1px #41a;
+    background-color: #e9e9e9;
+}
+
+.Act-img,.Act-img2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade 0s 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* ========================================= */
+
+.main-Act{
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crad-Act{
+    width: 550px;
+    height: 650px;
+    background: linear-gradient(90.99deg, #E0A307 0.02%, #A9008E 95.99%);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.crad-Act-container{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+}
+
+.crad-Act-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.crad-Act-head,.crad-Act-main,.crad-Act-footer{
+    color: #9D007B;
+    padding: 10px;
+}
+
+.crad-Act-head{
+    width: 100%;
+    font-size: 90%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.crad-Act-footer{
+    width: 100%;
+}
+
+/* ========================================= */
 @keyframes intro {
     from {
         border: 5px solid #48ff00;
@@ -460,6 +729,16 @@ iframe{
     }
 }
 
+@keyframes spin360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
 @keyframes blink {
     0%{
         opacity: 100%;
@@ -467,17 +746,4 @@ iframe{
     50%{
         opacity: 0%;
     }
-}
-
-
-.test{
-    background-color: #0094FF;
-    width: 20%;
-    height: 20%;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    animation:spin 3s alternate;
 }
